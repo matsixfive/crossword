@@ -1,3 +1,7 @@
+mod grid;
+use crate::grid::*;
+
 fn main() {
-    println!("Hello, world!");
+    let grid = Grid { width:10, height:10, letters: Vec::new() };
+    println!("{}", grid.num_of_combinations("hello".len()))
 }
